@@ -1,3 +1,39 @@
 .wx-custom-navigationbar{
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
+	background-color: skyblue;
+}
+.status-bar,.navigation-bar{
+	position: fixed;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+}
+
+.status-bar{
+	top: 0;
+}
+.navigation-bar{
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0 10rpx;
+}
+.navigation-left,.navigation-center{
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.navigation-left{
+	width: 50rpx;
+}
+.navigation-center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
