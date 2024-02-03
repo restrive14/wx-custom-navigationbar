@@ -1,8 +1,8 @@
 <view class="wx-custom-navigationbar" style="width: 100vw; height: {{isEnableHeight ? NavBarCaseHeight : 0}}px;">
 	<!-- 占位容器 用来挡住状态栏 -->
-	<view class="status-bar" style="height: {{statusBarHeight}}px; background-color: {{background}};"></view>
+	<view class="status-bar" style="height: {{statusBarHeight}}px; background-color: {{transparent ? 'transparent' : background}};"></view>
 	<!-- 导航栏部分 -->
-	<view class="navigation-bar" style="height: {{NavBarHeight}}px;top: {{statusBarHeight}}px;background-color: {{background}};">
+	<view class="navigation-bar" style="height: {{NavBarHeight}}px;top: {{statusBarHeight}}px;background-color: {{transparent ? 'transparent' : background}};">
 		<!-- 左侧箭头部分 -->
 		<view class="navigation-left" wx:if="{{isLeftVisable}}">
 			<image style="width: 100%;height: 100%;" src="./images/arrow.svg" mode="widthFix"/>
@@ -12,7 +12,7 @@
 			<slot name="left"></slot>
 		</block>
 		<!-- 中间标题部分 -->
-		<view class="navigation-center" wx:if="{{isCenterVisable}}">
+		<view class="navigation-center" wx:if="{{isCenterVisable && !transparent}}">
 			<!-- 标题 -->
 			<view class="navigation-title">
 				<image wx:if="{{loading}}" class="image" src="./images/loading.gif" mode="aspectFit"/>

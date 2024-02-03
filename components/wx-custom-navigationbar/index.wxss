@@ -3,7 +3,6 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-content: center;
-	background-color: skyblue;
 }
 .status-bar,.navigation-bar{
 	position: fixed;

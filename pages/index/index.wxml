@@ -1,4 +1,3 @@
-<navigation-bar title="Weixin"></navigation-bar>
-<scroll-view class="scroll-area" type="list" scroll-y>
-  <view class="intro">页面内容</view>
-</scroll-view>
+<navigation-bar title="Weixin" transparent="{{transparent}}"></navigation-bar>
+<view class="intro" wx:for="{{20}}" wx:key="item">页面内容{{index}}</view>
+

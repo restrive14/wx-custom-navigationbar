@@ -27,6 +27,11 @@ Component({
 			type:String,
 			value:'#ffffff'
 		},
+		// 是否开启背景透明
+		transparent:{
+			type:Boolean,
+			value:false
+		},
 		// 是否开启标题左侧加载效果
 		loading:{
 			type:Boolean,
