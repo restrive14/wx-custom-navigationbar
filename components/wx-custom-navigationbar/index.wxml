@@ -11,7 +11,7 @@
 		<!-- 中间标题部分 -->
 		<view class="navigation-center" wx:if="{{isCenterVisable}}">
 			<!-- 标题 -->
-			<view class="navigation-title" style="color: {{titleColor}};">
+			<view class="navigation-title" style="color: {{titleColor}};font-size: {{titleSize}}rpx;">
 				{{title}}
 			</view>
 		</view>

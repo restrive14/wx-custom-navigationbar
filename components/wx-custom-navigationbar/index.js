@@ -32,6 +32,11 @@ Component({
 			type:String,
 			value:'标题'
 		},
+		// 标题文本大小
+		titleSize:{
+			type:Number,
+			value:25
+		},
 		// 标题颜色
 		titleColor:{
 			type:String,
