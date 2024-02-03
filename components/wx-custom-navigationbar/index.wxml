@@ -7,14 +7,21 @@
 		<view class="navigation-left" wx:if="{{isLeftVisable}}">
 			<image style="width: 100%;height: 100%;" src="./images/arrow.svg" mode="widthFix"/>
 		</view>
-		<slot name="left" wx:if="{{!isLeftVisable}}"></slot>
+		<!-- 左侧部分插槽 -->
+		<block wx:if="{{!isLeftVisable}}">
+			<slot name="left"></slot>
+		</block>
 		<!-- 中间标题部分 -->
 		<view class="navigation-center" wx:if="{{isCenterVisable}}">
 			<!-- 标题 -->
-			<view class="navigation-title" style="color: {{titleColor}};font-size: {{titleSize}}rpx;">
-				{{title}}
+			<view class="navigation-title">
+				<image wx:if="{{loading}}" class="image" src="./images/loading.gif" mode="aspectFit"/>
+				<text style="color: {{titleColor}};font-size: {{titleSize}}rpx;">{{title}}</text>
 			</view>
 		</view>
-		<slot name="center" wx:if="{{!isCenterVisable}}"></slot>
+		<!-- 中间部分插槽 -->
+		<block wx:if="{{!isCenterVisable}}">
+			<slot name="center"></slot>
+		</block>
 	</view>
 </view>

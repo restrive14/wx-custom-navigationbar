@@ -27,6 +27,11 @@ Component({
 			type:String,
 			value:'#ffffff'
 		},
+		// 是否开启标题左侧加载效果
+		loading:{
+			type:Boolean,
+			value:false
+		},
 		// 标题
 		title:{
 			type:String,

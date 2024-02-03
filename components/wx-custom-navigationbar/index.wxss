@@ -37,3 +37,13 @@
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
+.navigation-title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navigation-title .image{
+	width: 30rpx;
+	margin-right: 10rpx;
+}

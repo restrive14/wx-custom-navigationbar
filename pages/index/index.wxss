@@ -13,5 +13,5 @@ page {
 	padding: 30px;
 	height: 100%;
 	text-align: center;
-	background-color: #50fff0;
+	background-color: skyblue;
 }
