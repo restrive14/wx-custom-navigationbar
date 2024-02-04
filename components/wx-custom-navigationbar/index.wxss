@@ -35,11 +35,21 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	max-width: 30vw;
+	overflow: hidden;
 }
 .navigation-title{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
+}
+
+.navigation-title .text{
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .navigation-title .image{

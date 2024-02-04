@@ -16,7 +16,7 @@
 			<!-- 标题 -->
 			<view class="navigation-title">
 				<image wx:if="{{loading}}" class="image" src="./images/loading.gif" mode="aspectFit"/>
-				<text style="color: {{titleColor}};font-size: {{titleSize}}rpx;">{{title}}</text>
+				<text class="text" style="color: {{titleColor}};font-size: {{titleSize}}rpx;">{{title}}</text>
 			</view>
 		</view>
 		<!-- 中间部分插槽 -->
