@@ -4,24 +4,24 @@
 	<!-- 导航栏部分 -->
 	<view class="navigation-bar" style="height: {{NavBarHeight}}px;top: {{statusBarHeight}}px;background-color: {{transparent ? 'transparent' : background}};">
 		<!-- 左侧箭头部分 -->
-		<view class="navigation-left" wx:if="{{isLeftVisable}}">
-			<image style="width: 100%;height: 100%;" src="./images/arrow.svg" mode="widthFix"/>
+		<view class="navigation-left">
+			<!-- 左侧全部插槽 覆盖箭头 -->
+			<slot name="#left" wx:if="{{left}}"></slot>
+			<block wx:else>
+				<image style="width: 50rpx; margin-right: 10rpx; flex-shrink: 0;" src="./images/arrow.svg" mode="widthFix"/>
+				<!-- 左侧插槽 不覆盖箭头 -->
+				<slot name="#part" wx:if="{{part}}"></slot>
+			</block>
 		</view>
-		<!-- 左侧部分插槽 -->
-		<block wx:if="{{!isLeftVisable}}">
-			<slot name="left"></slot>
-		</block>
 		<!-- 中间标题部分 -->
-		<view class="navigation-center" wx:if="{{isCenterVisable && !transparent}}">
+		<view class="navigation-center" wx:if="{{!transparent}}">
+			<!-- 中间部分插槽 -->
+			<slot name="#center" wx:if="{{center}}"></slot>
 			<!-- 标题 -->
-			<view class="navigation-title">
+			<view class="navigation-title" wx:else>
 				<image wx:if="{{loading}}" class="image" src="./images/loading.gif" mode="aspectFit"/>
 				<text class="text" style="color: {{titleColor}};font-size: {{titleSize}}rpx;">{{title}}</text>
 			</view>
 		</view>
-		<!-- 中间部分插槽 -->
-		<block wx:if="{{!isCenterVisable}}">
-			<slot name="center"></slot>
-		</block>
 	</view>
 </view>

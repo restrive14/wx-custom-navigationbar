@@ -32,11 +32,14 @@
 **isEnableHeight**
 是否开启最外层容器的高度 默认为true 设置为false后 页面将被导航栏遮盖住 
 
-**isLeftVisable**
-是否显示左侧返回按钮部分 默认为true
+**left**
+是否开启左侧插槽 开启后返回箭头也会隐藏 默认为false
 
-**isCenterVisable**
-是否显示中间标题部分  默认为true
+**part**
+是否开启左侧插槽  开启后不会隐藏返回箭头  默认为false
+
+**center**
+是否开启中间标题部分插槽  默认为false
 
 **background**
 状态栏和导航栏的背景颜色 默认为 #ffffff  可以是十六进制也可以是字符串,例如red,blue
@@ -63,15 +66,18 @@
 
 如果当前页面是页面栈的第一个，即无法再返回上一页
 
-可以将首页的路由传进来，即可返回首页，此功能后续会完善
+可以将tabbar首页的路由传进来，即可返回首页
 
 ***
 
 
 # slot
-left  导航栏左侧返回按钮部分  需要将 **isLeftVisable** 设置为 false
 
-center  导航栏中间标题部分   需要将 **isCenterVisable** 设置为false
+#left  导航栏左侧返回按钮部分  需要将 **left** 设置为 true  
+
+#part  导航栏左侧插槽 不会隐藏左侧箭头  需要将 **part** 设置为true 
+
+#center  导航栏中间标题部分   需要将 **center** 设置为true
 
 
 ***

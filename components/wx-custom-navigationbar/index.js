@@ -12,15 +12,20 @@ Component({
 			type:Boolean,
 			value:true
 		},
-		// 是否展示左侧返回按钮部分
-		isLeftVisable:{
+		// 是否开启左侧保留返回箭头的插槽
+		part:{
 			type:Boolean,
-			value:true
+			value:false
 		},
-		// 是否展示中间标题部分
-		isCenterVisable:{
+		// 是否开启左侧不保留箭头的插槽
+		left:{
 			type:Boolean,
-			value:true
+			value:false
+		},
+		// 是否开启中间部分插槽
+		center:{
+			type:Boolean,
+			value:false
 		},
 		// 状态栏和导航栏的背景颜色
 		background:{
@@ -45,7 +50,7 @@ Component({
 		// 标题文本大小
 		titleSize:{
 			type:Number,
-			value:25
+			value:28
 		},
 		// 标题颜色
 		titleColor:{

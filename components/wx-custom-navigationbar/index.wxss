@@ -28,7 +28,11 @@
 	align-items: center;
 }
 .navigation-left{
-	width: 50rpx;
+	max-width: 30vw;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	white-space: nowrap;
 }
 .navigation-center{
 	position: absolute;
