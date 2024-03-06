@@ -1,2 +1,9 @@
+.idea/
+**/.DS_Store
+/cloudfunctions/**/node_modules/
+/node_modules/
+/miniprogram_npm/
+/project.private.config.json
+scripts/secret.key
+/images/Thumbs.db
 components/navigation-bar/
-.DS_Store
