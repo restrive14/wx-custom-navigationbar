@@ -1,4 +1,4 @@
-<navigation-bar title="首页" transparent="{{transparent}}" part="{{true}}">
+<navigation-bar title="首页" transparent="{{transparent}}" part="{{true}}" loading="{{true}}">
 	<view slot="#part"></view>
 </navigation-bar>
 <view class="intro" wx:for="{{20}}" wx:key="item">页面内容{{index}}</view>

@@ -8,7 +8,7 @@
 			<!-- 左侧全部插槽 覆盖箭头 -->
 			<slot name="#left" wx:if="{{left}}"></slot>
 			<block wx:else>
-				<image style="width: 50rpx; margin-right: 10rpx; flex-shrink: 0;" src="./images/arrow.svg" mode="widthFix"/>
+				<image style="width: 50rpx; margin-right: 10rpx; flex-shrink: 0;" src="./images/arrow.svg" mode="widthFix" catch:tap="__pageToBack" />
 				<!-- 左侧插槽 不覆盖箭头 -->
 				<slot name="#part" wx:if="{{part}}"></slot>
 			</block>

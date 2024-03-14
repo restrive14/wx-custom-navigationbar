@@ -1,5 +1,9 @@
 {
   "usingComponents": {
     "navigation-bar": "/components/wx-custom-navigationbar/index"
-  }
+	},
+	"navigationStyle": "custom",
+	"backgroundColor": "#eeeeee",
+	"backgroundTextStyle": "light",
+	"enablePullDownRefresh": true
 }
